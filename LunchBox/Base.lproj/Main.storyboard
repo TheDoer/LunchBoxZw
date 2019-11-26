@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="282" id="WLW-oO-BV2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="282" id="WLW-oO-BV2" customClass="CatergoryCell" customModule="LunchBox" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="282"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WLW-oO-BV2" id="due-DR-3Gb">
@@ -46,6 +46,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="JmQ-5M-X9Y" secondAttribute="trailing" constant="20" id="wt7-Pg-fqW"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImg" destination="WUB-Tc-Fag" id="mnu-f2-2vo"/>
+                                            <outlet property="categoryTitle" destination="JmQ-5M-X9Y" id="FiW-rB-ieP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -60,6 +64,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="HCb-lS-2iZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="4Gm-hw-pGR" id="LNR-88-xKk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
