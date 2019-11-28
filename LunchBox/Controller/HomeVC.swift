@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
 
