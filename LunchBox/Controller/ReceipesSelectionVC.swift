@@ -9,6 +9,16 @@
 import UIKit
 
 class ReceipesSelectionVC: UIViewController {
+    
+    var selectedCategory: String!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print(selectedCategory!)
+    }
+    
+    
 
     /*
     // Only override draw() if you perform custom drawing.

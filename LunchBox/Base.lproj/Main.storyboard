@@ -66,7 +66,7 @@
                     <navigationItem key="navigationItem" id="HCb-lS-2iZ"/>
                     <connections>
                         <outlet property="tableView" destination="4Gm-hw-pGR" id="LNR-88-xKk"/>
-                        <segue destination="tVq-pj-gPd" kind="show" id="4Ho-eS-cKI"/>
+                        <segue destination="tVq-pj-gPd" kind="show" identifier="toReceipeSelection" id="4Ho-eS-cKI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
