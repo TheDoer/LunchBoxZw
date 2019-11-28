@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F10FC1DA238EAA7600B25C1E /* ReceipesSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10FC1D9238EAA7600B25C1E /* ReceipesSelectionVC.swift */; };
 		F121D37E238D4EDB005964B6 /* CatergoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F121D37D238D4EDB005964B6 /* CatergoryCell.swift */; };
+		F17CB7F623907A6E00F0DA7C /* ReceipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17CB7F523907A6E00F0DA7C /* ReceipeCell.swift */; };
 		F1C841BB2386C19300E09619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C841BA2386C19300E09619 /* AppDelegate.swift */; };
 		F1C841BD2386C19300E09619 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C841BC2386C19300E09619 /* SceneDelegate.swift */; };
 		F1C841BF2386C19300E09619 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C841BE2386C19300E09619 /* HomeVC.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		F10FC1D9238EAA7600B25C1E /* ReceipesSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipesSelectionVC.swift; sourceTree = "<group>"; };
 		F121D37D238D4EDB005964B6 /* CatergoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatergoryCell.swift; sourceTree = "<group>"; };
+		F17CB7F523907A6E00F0DA7C /* ReceipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeCell.swift; sourceTree = "<group>"; };
 		F1C841B72386C19300E09619 /* LunchBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1C841BA2386C19300E09619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1C841BC2386C19300E09619 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				F121D37D238D4EDB005964B6 /* CatergoryCell.swift */,
+				F17CB7F523907A6E00F0DA7C /* ReceipeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				F1C841BD2386C19300E09619 /* SceneDelegate.swift in Sources */,
 				F1C841D22386CE4100E09619 /* FoodCategory.swift in Sources */,
 				F1C841D42386D1B700E09619 /* Recipe.swift in Sources */,
+				F17CB7F623907A6E00F0DA7C /* ReceipeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -98,14 +99,60 @@
                     <view key="view" contentMode="scaleToFill" id="Et1-2t-X9f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bc6-lC-v3l">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="guQ-Dc-pcA">
+                                    <size key="itemSize" width="175" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oiv-9D-zNo" customClass="ReceipeCell" customModule="LunchBox" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Daq-AZ-m73">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k7k-rd-iCQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="k7k-rd-iCQ" secondAttribute="trailing" id="0t4-8z-Nw7"/>
+                                                <constraint firstItem="k7k-rd-iCQ" firstAttribute="leading" secondItem="Daq-AZ-m73" secondAttribute="leading" id="4w9-ll-XjK"/>
+                                                <constraint firstAttribute="bottom" secondItem="k7k-rd-iCQ" secondAttribute="bottom" id="el8-ia-VbU"/>
+                                                <constraint firstItem="k7k-rd-iCQ" firstAttribute="top" secondItem="Daq-AZ-m73" secondAttribute="top" id="sdY-tT-bXZ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="receipeImg" destination="k7k-rd-iCQ" id="Y0c-YG-GKg"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ghI-Bm-fY3" firstAttribute="trailing" secondItem="bc6-lC-v3l" secondAttribute="trailing" id="2rH-ux-pb6"/>
+                            <constraint firstItem="ghI-Bm-fY3" firstAttribute="bottom" secondItem="bc6-lC-v3l" secondAttribute="bottom" id="Frg-2P-6Kl"/>
+                            <constraint firstItem="bc6-lC-v3l" firstAttribute="top" secondItem="ghI-Bm-fY3" secondAttribute="top" id="TV0-de-1fc"/>
+                            <constraint firstItem="bc6-lC-v3l" firstAttribute="leading" secondItem="ghI-Bm-fY3" secondAttribute="leading" id="mcx-9r-jbw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ghI-Bm-fY3"/>
                     </view>
                     <navigationItem key="navigationItem" id="6ee-FN-17s"/>
+                    <connections>
+                        <outlet property="collectionView" destination="bc6-lC-v3l" id="oeL-6H-K9z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjZ-3W-3UY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1975" y="138"/>
+            <point key="canvasLocation" x="1973.913043478261" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
