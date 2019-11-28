@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Receipes SelectionVC-->
         <scene sceneID="PZA-Jc-3u4">
             <objects>
-                <viewController id="tVq-pj-gPd" sceneMemberID="viewController">
+                <viewController id="tVq-pj-gPd" customClass="ReceipesSelectionVC" customModule="LunchBox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Et1-2t-X9f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

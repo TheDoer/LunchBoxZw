@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReceipesSelectionVC: UIView {
+class ReceipesSelectionVC: UIViewController {
 
     /*
     // Only override draw() if you perform custom drawing.
